@@ -48,6 +48,10 @@ header {
   font-size: 1rem;
 }
 
+header ul li .menu {
+  display: none;
+}
+
 header ul li{
   display: inline-block;
   padding-top: 1rem;
@@ -163,4 +167,79 @@ footer {
 footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 960px) {
+  .content {
+    width: 100%;
+  }
+  .bgImage {
+    height: 22rem;
+    width: 100%;
+    padding-top: 0rem;
+  }
+
+  .tagline {
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .bgImage {
+    height: 17rem;
+    background-position: 20%;
+    background-size: cover;
+  }
+  .menu {
+    display: block;
+  }
+  .menuItems {
+    display: none;
+  }
+  .tagline  {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+  .tagline h1 {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .imageLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraphs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .paragraph {
+    width: 100%;
+  }
+  #paragraph2 {
+    padding-left: 0px;
+    padding-top: 4rem;
+  }
+  .paragraph h2 {
+    text-align: center;
+    width: 100%;
+  }
+  .paragraph p {
+    padding: 1rem;
+  }
+  footer p {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+    padding-left: 0px;
+}
+  .lefthand p {
+    display: none;
+  }
 }
